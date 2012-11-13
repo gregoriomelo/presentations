@@ -197,9 +197,10 @@
 </section>
 
 <section class="slide">
-  <h2></h2>
+  <h2>Programming model</h2>
+  <p>Datalog</p>
+  <pre>[:find ?e :where [?e :age 42]]</pre>
 </section>
-
 
 <!-- End slides. -->
 
