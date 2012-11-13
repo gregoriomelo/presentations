@@ -105,6 +105,99 @@
 
 <section class="slide">
   <h2>Architecture of Datomic</h2>
+  <p>Datomic breaks them apart and gets</p>
+  <ul>
+    <li>the ability to relocate subsystems</li>
+    <li>the ability to let separate services take care of what they care about</li>
+    <li>simplification of system components (?)</li>
+</section>
+
+<section class="slide">
+  <h2>Architecture of Datomic</h2>
+  <p>3 independent roles</p>
+  <ul>
+    <li>peers</li>
+    <li>transactors</li>
+    <li>storage service</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Architecture of Datomic</h2>
+  <h3>Peers</h3>
+  <p>component library embedded in the apps</p>
+  <ul>
+    <li>talks to the transactor</li>
+    <li>includes communication libraries</li>
+    <li>provides data access, querying, caching and query capability</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Architecture of Datomic</h2>
+  <h3>Transactors</h3>
+  <ul>
+    <li>accepts transactions</li>
+    <li>processes them serially</li>
+    <li>commits to the storage service</li>
+    <li>sends messages to the peers</li>
+    <li>indexes stuff in the background</li>
+</section>
+
+<section class="slide">
+  <h2>Architecture of Datomic</h2>
+  <h3>Storage Service</h3>
+  <ul>
+    <li>interface to highly reliable, redundant storage</li>
+    <li>available from third parties (like Amazon DynamoDB)</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Other stuff</h2>
+  <p>Separates reads from writes</p>
+  <p><em>writes never have to wait for reads to finish</em></p>
+</section>
+
+<section class="slide">
+  <h2>Other stuff</h2>
+  <p>Integrated data distribution</p>
+  <p><em>each peer and transactor manage their own local cache, in memmory. Self tuned cache!</em></p>
+</section>
+
+<section class="slide">
+  <h2>Other stuff</h2>
+  <p>Data awareness in the apps</p>
+  <p><em>enabling apps to be smart about data</em></p>
+</section>
+
+<section class="slide">
+  <h2>Other stuff</h2>
+  <p>Elasticity</p>
+  <p><em>databases as elastic as the apps + apps don't have to wait for another app's query</em></p>
+</section>
+
+<section class="slide">
+  <h2>Other stuff</h2>
+  <p>Cloud ready (!)</p>
+</section>
+
+<section class="slide">
+  <h2>Other stuff</h2>
+  <p>As fast as RAM</p>
+  <p><em>the storage service is the bottleneck. the rest of the system runs primarily in memory</em></p>
+</section>
+
+<section class="slide">
+  <h2>Data model</h2>
+  <p>immutable data <em>a database of facts</em></p>
+  <p>atomic data <em>entity, attribute, value, time</em></p>
+  <p>minimal schema <em>doesn't require the entity model to be replicated to the database</em></p>
+  <p>a different database <em>the indices contain data, not pointers</em></p>
+</section>
+
+<section class="slide">
+  <h2></h2>
 </section>
 
 
