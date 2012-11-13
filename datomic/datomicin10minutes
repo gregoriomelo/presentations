@@ -37,6 +37,77 @@
   <h1>Datomic in 10 minutes (or more)</h1>
 </section>
 
+<section class="slide">
+  <h2>Disclaimer</h2>
+  <blockquote cite="http://example.com">
+    <p>It is all in the interwebz</p>
+  </blockquote>
+</section>
+
+<section class="slide">
+  <h2>Datomic</h2>
+  <h3>distributed database designed to enable scalable, flexible and intelligent applications, running on next-generation cloud architectures</h3>
+</section>
+
+<section class="slide">
+  <h2>Datomic</h2>
+  <h3>offers</h3>
+  <ul>
+    <li>ACID transactions</li>
+    <li>joins</li>
+    <li>data model</li>
+    <li>query language</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Datomic</h2>
+  <h3>by doing this</h3>
+  <ul>
+    <li>bringing data manipulation capabilities to the applications</li>
+    <li>fixing misconceptions with reads, writes and time</li>
+    <li>immutability</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Datomic</h2>
+  <h3>no more manual</h3>
+  <ul>
+    <li>caching</li>
+    <li>replication</li>
+    <li>complex configuration</li>
+    <li>sharding</li>
+    <li>logging</li>
+    <li>locking</li>
+    <li>latching</li>
+    <li>disk management</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <h2>Because we live in a different world</h2>
+  <blockquote cite="http://example.com">
+    <p>The economy of computers in the 20th century kept us from doing the right thing.<p>
+  </blockquote>
+</section>
+
+<section class="slide">
+  <h2>Because we live in a different world</h2>
+  <p>traditional DBs have to deliver</p>
+  <ul>
+    <li>coordination</li>
+    <li>consistency</li>
+    <li>indexing</li>
+    <li>storage</li>
+    <li>queries</li>
+</section>
+
+<section class="slide">
+  <h2>Architecture of Datomic</h2>
+</section>
+
+
 <!-- End slides. -->
 
 
